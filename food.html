@@ -1,0 +1,281 @@
+ 
+</html>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Food</title>
+</head>
+<body>
+<style>
+    .heading{
+        text-align: center;
+        font-style: serif;
+        background-color: #408E91;
+        color:black;
+           }
+    h3{
+        text-align:right;
+
+    }
+
+    /*.chat-box{
+        width:80px;
+        height:50px;
+        color:white;
+        background-color:black;
+        border:5px solid black;
+        border-radius:10px;
+        position:relative;
+        bottom:10;
+        right:0;
+        position:fixed;
+        z-index:1;
+        margin-right:20px;
+        
+    }*/
+
+    body{
+        background-color: #B0DAFF;
+    }
+    
+    #pref{
+         font-size:20pt;
+
+    }
+
+    .box{
+        display:inline-block;
+    }
+    
+    .box-1{
+        margin-right:5px;
+        margin-bottom: 30px;
+       display:inline-block;
+       height:132;
+       width:110;
+       background-color:#ACB1D6;
+    }
+    .box-2{
+        margin-right:5px;
+        margin-bottom: 30px;
+       display:inline-block;
+       background-color:#ECCDB4;
+       
+
+    }
+    .box-3{
+        margin-right:5px;
+        margin-bottom: 30px;
+       display:inline-block;
+       background-color:#B3C890;
+       height:150; 
+       width:150;
+    }
+    .caption{
+        display:inline-block;
+        margin-right:20px;
+    }
+    #copyright{
+        border:30px black;
+        background-color: black;
+        padding-left:500px;
+        color:aliceblue;
+        height:80px;
+    }
+    ::-webkit-scrollbar{
+        background-color: #B0DAFF
+    }
+    ::-webkit-scrollbar-thumb{
+        background-color:#8ec3d3;
+        border-radius:10px;
+    }
+    ::-webkit-scrollbar-thumb:hover{
+        background-color:grey;
+    }
+    #logo{
+        height:20px;
+        width:20px;
+        display:inline-block;
+    }
+    h1{
+        display:inline-block
+    }
+    .c{
+        background-color:#EDCDBB;
+        border:5px solid transparent;
+        border-radius:20px;
+        display:inline-block;
+        margin-right:20px;
+        margin-right: 20px;
+        text-align:center;
+        box-shadow:20px 20px 20px rgba(0, 0, 0, 0.8);
+
+    }
+    .c:hover{
+        background-color:#F2B6A0;
+    }
+</style>
+<div class = "heading">
+    <a href="/index.html"><img id ="logo" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAO4AAADUCAMAAACs0e/bAAAAdVBMVEUAAAD///+qqqrv7++mpqajo6MRERF1dXVycnI0NDSYmJhHR0eCgoJkZGQkJCRra2t8fHxYWFjBwcHa2trj4+PU1NRAQEAvLy+enp6RkZGJiYlTU1NISEhdXV06OjoaGhrIyMi2trbp6eknJyfExMT19fWxsbEXERX8AAABgUlEQVR4nO3OS5aiUBBF0QeKKKIgiAp+STOd/xDrobVW1hCqsXcnGnEaNwQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAD4b2TbujqcQnbMl6ssnG5V/UxDsd6UizT05+sQ0jBcz31IF+XmUoT0b77K82PMD1W9jfnlb777ze/lZh3zZ13dpnyZH+fv/P7JY9fvdv0/eXUowjyuiPnptsyf8/eKmDfroQmz8F3XjzBbjEPVhdnxVVzb8HWYny77sD8X6W0Wuk0/bmfhsSzfeZnH/D4Om5ivXsWuDft1FpJb96qSkJy/m108m/FxiCdP220SZkOxD0nYF8MsJNt2XsfP4TFuprxpzvFUr+6WhJ86a+/v/GvKT8NPSJ5dmv/mu+b78slXMS+zdpGEr77/5GXMj126jMHlMV7juY6PKV+m3XHKT22Y8iHmi/ZUx3zVpdPoSzP+jv7J5900uvyM7qfR9zbLY357vD6j/wA8URkoSR675AAAAABJRU5ErkJggg==" alt = "logo"></a>
+    <h1>Food</h1>
+   
+    <hr>
+</div>
+
+<div class="chat-box">
+    <p>Chat with us</p>
+    <input type="text" placeholder="Type something...">
+</div>
+
+</div>
+
+<p id="pref">Choose your preferences</p>
+
+
+
+<div class="caption">
+    City
+    <br />
+    <select id="city"name="City">
+    <option value="Amritsar">Amritsar</option>
+    <option value="Mumbai">Mumbai</option>
+    <option value="Hyderabad">Hyderabad</option>
+    <option value="Banglore">Banglore</option>
+    <option value="Chennai">Chennai</option>
+    <option value="Jaipur">Jaipur</option>
+    <option value="Lucknow">Lucknow</option>
+    <option value="Pune">Pune</option>
+    <option value="Kolkata">Kolkata</option>
+    <option value="Kochi">Kochi</option>
+    
+    
+    </select>  
+</div>
+
+<div class="caption">
+    Cuisine
+    <br />
+    <select name="cuisine">
+    <option value="Afghan">Afghan</option>
+    <option value="African">African</option>
+    <option value="American">American</option>
+    <option value="Arabic">Arabic</option>
+    <option value="Armenian">Armenian</option>
+    <option value="Asian">Asian</option>
+    <option value="Azerbaijani">Azerbaijani</option>
+    <option value="Balti">Balti</option>
+    <option value="Bangladeshi">Bangladeshi</option>
+    <option value="Bar">Bar</option>
+    <option value="Barbecue">Barbecue</option>
+    <option value="Beer restaurants">Beer restaurants</option>
+    <option value="Belgian">Belgian</option>
+    <option value="Brew Pub">Brew Pub</option>
+    <option value="British">British</option>
+    <option value="Burmese">Burmese</option>
+    <option value="Cafe">Cafe</option>
+    <option value="Campania">Campania</option>
+    <option value="Cantonese">Cantonese</option>
+    <option value="Caribbean">Caribbean</option>
+    <option value="Central American">Central American</option>
+    <option value="Central Asian">Central Asian</option>
+    <option value="Chinese">Chinese</option>
+    <option value="Colombian">Colombian</option>
+    <option value="Dining bars">Dining bars</option>
+    <option value="European">European</option>
+    <option value="Fast food">Fast food</option>
+    <option value="French">French</option>
+    <option value="Greek">Greek</option>
+    <option value="Grill">Grill</option>
+    <option value="Healthy">Healthy</option>
+    <option value="Hong Kong">Hong Kong</option>
+    <option value="Indian">Indian</option>
+    <option value="Indonesian">Indonesian</option>
+    <option value="International">International</option>
+    <option value="Irish">Irish</option>
+    <option value="Italian">Italian</option>
+    <option value="Japanese">Japanese</option>
+    <option value="Korean">Korean</option>
+    <option value="Lebanese">Lebanese</option>
+    <option value="Malaysian">Malaysian</option>
+    <option value="Mediterranean">Mediterranean</option>
+    <option value="Mexican">Mexican</option>
+    <option value="Northern-Italian">Northern-Italian</option>
+    <option value="Pizza">Pizza</option>
+    <option value="Pub">Pub</option>
+    <option value="Seafood">Seafood</option>
+    <option value="Shanghai">Shanghai</option>
+    <option value="Soups">Soups</option>
+    <option value="Spanish">Spanish</option>
+    <option value="Sri Lankan">Sri Lankan</option>
+    <option value="Steakhouse">Steakhouse</option>
+    <option value="Street Food">Street Food</option>
+    <option value="Sushi">Sushi</option>
+    <option value="Thai">Thai</option>
+    <option value="Tibetan">Tibetan</option>
+    <option value="Turkish">Turkish</option>
+    <option value="Vietnamese">Vietnamese</option>
+    <option value="Wine Bar">Wine Bar</option>
+
+
+    </select >
+</div>
+
+<div class="caption">
+    Restaurant
+    <br />
+    <select name="restaurant">
+        <option value="Paradise">Paradise</option>
+        <option value="BBQ Nation">BBQ Nation</option>
+        <option value="Flechazo">Flechazo</option>
+        <option value="Ohri's">Ohri's</option>
+        <option value="Chutneys">Chutneys</option>
+        <option value="Ottimo">Ottimo</option>
+        <option value="Pista House">Pista House</option>
+        <option value="Mekong">Mekong</option>
+        <option value="Deccan Pavilion">Deccan Pavilion</option>
+        <option value="Okra">Okra</option>
+        <option value="Shade">Shade</option>
+        
+    </select>
+</div>
+
+<h4> Browse Hyderabad by food</h4>
+<div class="box">
+<a target="_main"href="https://www.tripadvisor.in/Restaurants-g297586-Hyderabad_Hyderabad_District_Telangana.html"><img id="cafe"src="https://media-cdn.tripadvisor.com/media/photo-f/1a/c3/a1/74/cafe-cuisine.jpg"> </a>
+<br>Cafe</div>
+<div class="box"><a target="_main"href="https://www.tripadvisor.in/Restaurants-g297586-Hyderabad_Hyderabad_District_Telangana.html"><img id="seafood" src="https://media-cdn.tripadvisor.com/media/photo-f/1a/c3/ad/0b/seafood-cuisine.jpg"></a><br> Seafood</div>
+<div class="box"><a target="_main"href="https://www.tripadvisor.in/Restaurants-g297586-Hyderabad_Hyderabad_District_Telangana.html"><img id="chinese"src="https://media-cdn.tripadvisor.com/media/photo-f/1a/c3/a3/04/chinese-cuisine.jpg"></a><br>Chinese</div>
+<div class="box"><a target="_main"href="https://www.tripadvisor.in/Restaurants-g297586-Hyderabad_Hyderabad_District_Telangana.html"><img id="pizza" src="https://media-cdn.tripadvisor.com/media/photo-f/1a/c3/ac/e1/pizza-cuisine.jpg"></a><br>Pizza</div>
+<div class="box"><a target="_main"href="https://www.tripadvisor.in/Restaurants-g297586-Hyderabad_Hyderabad_District_Telangana.html"><img id="japanese"src="https://media-cdn.tripadvisor.com/media/photo-f/1a/c3/ab/6a/japanese-cuisine.jpg"> </a><br>Japanese
+</div>
+
+<h4> Dine in</h4>
+<div class="box-1"><a  target="_main"href="https://www.paradisefoodcourt.in/"><img src="data:image/png;base64,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" alt="paradise"> </a><br>Paradise</div>
+<div class="box-1"><a  target="_main"href="https://www.barbequenation.com/"><img src="https://media.licdn.com/dms/image/C5103AQF0kk1MBzf7_g/profile-displayphoto-shrink_800_800/0/1541231930421?e=2147483647&v=beta&t=xyqs8026wPhYfFziw45V_smrZvaTnFovCeKaahl0q-s"alt="Bbq nation" width="110" height="110"></a><br>BBQ Nation</div>
+<div class="box-1"><a target="_main"href="https://www.flechazo.in/"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAASIAAACuCAMAAAClZfCTAAABvFBMVEX///////38/////f7///r///wAl92X4fUAquEAmdwAmNgAl98Am9oAmt8AmdX+9cf/6CExqLDm4CP562Vuz9gAluaqzVD/7o8An+j///Utr94AntEAnuCZyGBhy/Ggy2H99aTv+v/W8v9dvIP97nkAospCwObw3Sb/8KWWzVrR8/vD0EP66DVize1+2PIQvOa+6/xOvoHv4RoAAAD/7oYApsBHs5ru7u56enqgoKDT09ONjY0Rp7lPT084ODhnZ2fh4eFDQ0PIyMgfHx+2trYqKipubm6Dg4P//+xaWloWFhaampo+Pj4AlelQxfzY5cB9xH8AlPKo4/PI7P3i8/zm+/uX4+fn9eqH2+lEwt3D7+Jr1u2I0upww7nH6JGp3JP9/Yig2aDH2pH+/Nrl6oZ1uobO3C76+9D/71Q9rqPc3Uw3rM3/+cCg4v3L4F4AkflguZWJwmcnpaSr0UMgrZwhl8H/6GTi4lLX3XDh7tjS4yya1He80Um/4zy/7fLb8LyK1v/39GCU3sn17wCG0FJQwst9xLuo1axgx2+u2vF8uXww0uGWw3fYzkDU8tvA5qRyyflntZNOyKjx+rYWL3v5AAAY4klEQVR4nO2ci3/T1tnHLR35oitOgkhkCRM5RAQRyy4J+BZfYzt2EodElsCu061tICVpsgZ6eduNeawbayldX1b+4fc5cpw4EC7dXnC7j358wLJ0dGx9/Vx1weNx5cqVK1euXLly5cqVK1euXLly5cqVK1euXLly5cqVK1euXLly5cqVK1euXLly5cqVK1euXLly5cqVK1euXLly9d8k0kO8cjvhpbwEAhFeb28B9XbzoN4bEnQ4lqIoGEQd79wffbxw+KEkjPUMbHNEEITXmcqLZ6FIz4l9hib0uq9BYB0eAF6AXQb2hfd4dX8sRQwA6w/oLx3PiQcd7XREqPdR/e3HA4Yt/NVeCan/5b3oiBNe7ZAgegLrOhoLy8eHdjSaIAZAwluYCDm2dLSt/0Ogw1Ve4tdhQh7nqFTyVQOcjWTPOMhBryIP1R/TW+cdYIHIo+GOWZycFzycODHR8dQOImxHQzOkwU+Go7bs3trjVYO/H2Vbh9Jt1FsGG6AQIvurLUtFJCK9SLX0JpZFIAqm8KrOdjhuL2lF4A98Dokgxti6I5UADBShwpb+B9gwjYdUnVl0SwVOFDkEY0KIIo4/lvSopu28J47MAxAdG5bq1w4VunmrtQav0Vs1D4Wo7uHqtqa9X6uBxXQ7WigGf0LtVryGCM+tTbw5fKvmpSJRGBfq1CRAZO3DGy2maR1T9ZASZfbmwB8Q6lg1otlqx7BC7U4XAcIhWBJJghUcvyX0loXfEscB9URoVcOCwjM0TQsbH/zu0YbPx07//kP4bQl/gIW1NMuxwkcfnpGQP8ZxPE/zPCtMrL2/JRG65vP5RO7j8S0iHvIxirhwe1KSIk8DCsuyoqgEPvVv1UjKoFmYFEQLjYWPbz9em+ZFeMcLXADYe2qU552LVK2BbEEgvRN3IoNjSXgVQoNZye7IPp8sCIL82Z3t6w2BY66dC56RCI8/4IO1AiOI8rmrM1QzJvACQ+NVosAs/O4TydIUWWCnr8xOUt0QLTAbI5fubqnhaZmG6TiBEdnQ7ydrHkNQBA5LkBs7o7ufKqwIHybD9g1m4eM9dRhR2+rqx6GTRKph2DhUquohOSA0EMHtKBwACz80tzG1fR1bESDag7jsD+Gfnp2QReFycNyOcgwryxwcOxyy4lu/+Iml8Qy7Mf0gOEl2QwqQuz96t7YfEBieYRgYJPDsyB8mKUMAw8P2yCsbO9vnWWVChk8E2DJY09TYlvfdE0JkxK8DBsi7FERdRJraPoQIG4dPeA/lH3Ji7KHUMA3WojCs+NmdKzsNRXGsCHYAK4IffkL0bTTOByf1AOtT4KjYhijQIife3x63wpzMiNiKPPEQy3DiyOhXt8Ic7+NpsQGHLygN+vJYzRBEtsGygJAWD3avN1iZ8U2IE+CvjCiObI/XhoDIQ5omtl4vBCUIhxQy2jdJKqKrXgjZpIRUsxU5tm41ytGCj18YGbl2D6wIDvAIEQOuNX1/5/79z4PjcQWCx4TITl9TGhwvi9eujCXWWKDVR8QBoqtj+hoD40ThvszQCseK66N7+4HQ/S9GFgSW87F3royILFiP8KXMsorAgpt+9cm7R+ShiLgfJ25CjUSAiIS6sbaNmnGwIkRKnubDjomOrRsj4kT53uju13f/Z6QB4XgAkcju/Hn766/v3p3Z5wSFZuWDzz8/kAVFbkyfu/vNmigPImLvXx27GeA5gZcPtv80Anz5xs4fx1T9xtd/2P3T9IbMCvfOfQrWxSoHD/48BdsVCHOzM++eEJiN3unCMSKy62+qpC2p4ZCFuobuhfIGNVv+ONQ5JxH55MvBi8/2/tIWOXoAEcez16/endk7syc9BCfjhS+2g2M3AhyNEc1+87wVAaKzCixw13eDf/02wAq8uLB9t0bU9vb2vhVYmZXPXZZFnmbvPwjevaFhT5QvBCeHgMiL9HZLBVKE+jh61kKSbcR0WGeSUKnZnU2LkKiTjuYgmpSQrkGgGUDEC77rVy9KEiWRhkILLHMQ/OuerSk8ILow+02YP4Gocf/S2NkJkVOY83/7auvWGjBhF67MbpFkjbDXOPCv6e0LHMvRvoOrd5+pYRE8Uv4xOP7uyBCHBSNBEmqn7bdslZTIeLutI1uLQeHcNlSEJDOmn9zPQcRyf7+6d4uMxMAufMeIFHlj548fwkRIanGY5HvB+ZoapSFXwc9/Yw1cCSM6Q8VDDLAdGQVEDEdPX/7bDKlrNC2LGJEH3Fpt85xvY2T0vNCAsD116SKlhhWB59jz7xARMOqdpkAeyqt3tLAWNSJeMh7zE2asQ3r12CZkfgjdz5WzGJHC8jtTjzTTDp1ERNPKwtT1cPR9inzICTRzAtHsjTWIT6w89f3ZThRCEONzENHghjtTH4SjIcj+gCh4hgBEkZhPYBs/By/Ih4ikHiLfO0UEHoaDMIRkUiLUuNF5EsAWFDMoI9ZFthHqEpSXfNomT3a1jhUJAi1z4j8+fiRCzj5CBBFYEHzChPzd+NZDhekj0o4QQbEAvjY9EVC4CaiV+ohwHarAFmHCQeSFYh88EWL/98Hzw0SEPGqvX4X2k3QKaMsIRe1bWkuNdlTSH+vYEMFvxjrPVbNO0sfVo7hx58p1yGjsQLiG/qMBKRxi6kPFdwoiGtsWD8U5xx8jYnhWZBmG5cBurgEiyBukEYBCAQLeemCoiEgrbuO8rj9uWlbEhnb9aUxXo13ViEMgjloS2X3YjukQxgcNqZf04SiZDWhANk4g4jkIsjLP/R0jog9jEalBr+abhlgUhuYOUveEDwgrAsMexiIGCmsFCnFaoBsLPURqR8BZ8MrsRxOiwPJDQkR4CNuMIxu+DzhZu90Od737sa7aalKmTu53IpS0r7XbJsKdyMDJWseKsBGJn+EGBGzgGBEwUja4RuNycOYhWBTH9hBBNSQK52e/0XhsRayPFcHdBFxdO4igSRFBLO4wHEcjKbVNc3JjZHv2O9g+PESQ0uNGBNoLyo4/jEbXYm3V1vyqGVd1XX0cR+TNWKylIyIS11X0HCIoWqYF8YddQDSY9MEyBHla+fIctiKhh0hS22BQInf+6jdhsBYaulxoTGRoQI4djZHB/GDWw3BNokiMAbeDGuvbYSKCdoOwnmxCMY28XghLqBXwS/t+VY+A1SDLlpqxsza0aJGOP4KeKx2h3pu6fPnHK88jgn70i3sX/nThn7OThsIdWhHyRz84mJr6Jzgah+vjg3tT6wfTIqS/HiJoUK/fW7/3/cKGT+4jMiE7csJUcOwmIBwiIg9Fhtt+W8UtPWQ1KI5sq2uBlds2SXlV01QpktQ7UYv0Es9V1zRE0rGZyWftxglHgw5iavTuzOTkzNaRFdWQav/l9te3L87/tDaB66LPL12c/99Poa1wEEHxzE9fvjo2+fEjKBL7iFoBHOHvBSeNYSKCcgdyaztmPDZNcCUogcyYSVAqspqm2Y3U1C6Uj/H9cLsJCcaL2xN8dpkke4gEXF0T+hruNQcymg+c42KNoChISZD0HUcDJ5VqW1tbNVubEJxOf6bWhU6/XxfRPtxVSLdwg+EgQiSBnVmEeWcMBVLdsBA5gmjU6jab+5st1UtZRsumbN00QNF9G6oAc9MwTIBHqXH/4wi+HgHWhRHxQq8Bifk4dgAR7aNxA4JrLSNAMz1EODFQFHQlloabekC0RzknQ9hDRLjynoStIsf0EHkgCfJCY+QKRiQMGRG+3gEsbLPzGJ/1gNah6e9Ew+21TvshIvH5dZKA3p/cbLejnZauwpojRDP4lMBLEBEnEfVkacorEOla39EoZIUYWmnsjM6eGT4i5wInCX5hPolDkCaRahpRTQu3Ox0tTuEChcTnHDvtaDNi+sEjuycQvdSKHETKACJ88fbIimYA0cTziCIae5jRJNQERDx7cOnulsENG5EX+EgUAT1+J+zHl2kgOke1mNaJRdsGRVh+w2hakbOxsE1Rtq3HI7b3zRHRA4igHzx2tBlvPARV5glEUkTje4i2JLQfgrXMenCsNnxEVM+O4CDsVnQzrqpmJxztGrGw9ijaVlUrHo2FYrFQVCX6F1sPT4YwGJFHj0FvMdjpn0TEDToatqJDRzs8GeJ7wYoOHY0wOJ5V+AvBcbI1MWxEJCR4sA6zqxLIgrSm+8OdVuJxTHu6FtXwpUSIUrHYQ1vCJ7V7l6H//xC96Gj9pB9VZB8MDE6SraHHIkLVTXMzrLU7poUDj26Ejc2WFmhpHWxFTdPy2BEdefWmbveuhxDvAJEd5gX2s/vbs3vk8MM1Qdpx0zT9Rrvd6XZ10vKHDaOt7bdiLS2KyGan04WMZu9HO2YXnw/AGfCtI4IQx3Lsxs+jd7dgmmEjgjxD2jZFeJoPDX/TJhHA6Ozv+zUjHPJ7wcaMtj/+sN02mpFmRHXiFiDy0W8VEWUGfLxPXL80JpHDD9cOJnwNDamWiuuiZhTU6TzVnhi2ZOuYUQysyqKg31ed4W8d0Z5Tp7PsueA89SuIRT1EEIyhxSAjj+O2Gsc3JDzRYgY+zW9u6ta+YUaQJBH9e6DePiLSEBiZla8ExxHx60AENmTFzcf7RqdlISeptdeiXUSBWVlGtOuVoKYBPhTlRe8GkRoWOEW89sfZZ4j6dSAioBhq47tVOhahQwrDhQA+U2ubOvSsmo5LIoLyeA8vFL19RJE1wMJ+MfrV3pARUfhmBkRBaW22N+PxeFdX7ce4abVsKLl1iD7mWUuKh6IWjun4nkXnasAvQNRrQBC+Zwqf2yXeBNE1QGTCRAK7fnVsC5GdYYZrfNLjpg7OBIQwKy+EIexq5j6ssiwz4om0NylyM9SB1jWhkv37jX4pIomk8M18JBRX/QbkNYgMPJFyL3ixNmRE0Mebm2dbrU7bUCUC3bKNdribIP1aFxlRS23tk1RYswm7E4CaqdMCr/v3ENV6IQwh6g0QOaf3w5zAsdPnguNDR4TzeNNs+ZuqhE8JPY4ZNlKNkGGbsX2S6GgW2mw3SS+5Hw6HH+5vbsbtf8vRatDZYNmE9WaItp4qHCOO/Dn4jBo2IpyjSNJWSXyGX6L2n0S8ams6bFnRqFVDRlv3xNtPbYqUcB8HVXjceoOkzw8g4g4vErXwnYpaV3oDRDhcf7PGMHRjZ/sSTOrtQPgafkbrAaPMqI6stVgXmbE4QZFP2zpSN9uduIXzGYEzXO9WtZOIjk6GeBxErHNi9ggR37tgreDr1B+N/xSmX4eInf589qeQQPPsv3D7QVAGRuQ7RsQPDxFBxA1L0gNh5G0FIhSytbCKCPQYGn/LKRq9/cuNr0LEnUA0wYq962g0mIdzNfa1iMRrD2a/Dfh8rLwevCj1EbFTV3u3PfiGichLdk2bssNtm4rHWjbStbCEb55WI02wI/Awqn/7/EsQ9RyN5QcQCQLtIIJjU/BF7BtrAvf6jDb7geLzAVGcC/uI3rs6NnwrQnYzApZgxExKjYKP3dI0G1EQrgjSstTewzM9MzoF0YOjs44sfzDgaALbu6bvOBq2otfWRRCuZz+YUIQNmPMZ1UMkwKSj4GhRbEVDjEUIX0yTvDoEaElvQwvrjxleXPBBLMcdPr7FeBAR10fE8L7pc7Of2KoHWxGDjyahInwFxMfS4s6D+Vo8IAjCBgy6EeZff9Zx+9IjjuEb97dnv8GPWvgDgsKLO+fma90Yp/AsB9Y1JETOXdaQ+89CKYT2ozplGxp43im3gfduwRL6iGial6+/90iL2jcDvOCbWHjv53D0fYnyywwnNIQvfj4bk2la3riGEbEC82pE7LXt0QXFx7IL7021n3TaLTME0/Di/evhgMzwDCufG5oVOSIl1AEnI6xWHBEqMJJOGfQiIgXfBPHpXz6SRUHkoEWfmPhu8pN4QGGEiQavKArHM8IGeNCNNfF1iMCKtqdZmJHhaIWbUB5996gBhWRDlqFXUxTG9+WVYdzreCxJstpRqJNsM0JIkmpsWqfcKf8CIpphRR+7sHtObtCsIDRkWrgwO6mHJnhwMJqnOUYQJj7buXQX3w76GkSNhe0HMgvlAjshCKJC71y5s8GyvEyLUIDRik8c2R3GHbMD0o0nTQla8iYJlRDVNZovczTfICKFE5TGp9ufyywDoVXmGl9eDo6TRojxMQq+W0uhWVb4Pjhmr/kgtR0j4p+7SOQg2n0gsDCfwPCcjO/vvwwZTRbwnccM52uw3we/2nv3XBwREJJJy9+ycOY6LIG6Lf2UkXZYYMUGexl+eNQNQZEnNkRW3JB3zwksBGh4s+Fs1KMBlmV9vCiySkM8GA2OW7An/5kMuQoBIl78bGd0LMqKYoO7F5wk9RDta2xM7z6gxb7YjZHt/3kUcO4+4iH6b4BVQYp8t2SOhAjI+2ZLd2qf3sOF3rihn/JgE9Qn0Dc5NxV7utqELMsC/KVHts+FWPlLGb+fBqtApN75FJbxI0fyyNRu8KszejggOPfEPqO6IW5aZq9jK5Kn8fgZQtc42Pc+WNFEb0oZtuxsz/4UDk3DNDwvyNfuXIFphvVwI4JSxvbrHudGot7DllRzUz/lkRRkdr5dX/8BYgK+NNL517qjH3689M9/dH7oLf+we2kSP0XS/fZfB1NTU+v3LozOXtyDn8D4YH39x0uzzwjdf/bO+p0Ll8a6D/EqPJnqzPWnS7tnYdOhfjg/CvVE99sDZ5r1C7uzX+2Rp+WQdyHk9aJI0yZIytN/jpmw4vppvxhpf3J7fnx+ZsuLvKi2Nz5/exw0OT+5VZv88Pb4PH43fgZfMvBs7c1Mjs/PX5yf36OgJyWprQ9hz8ktyJe3JmG/+RmK+mRyfHJ8HCYjpT1noltbsMmZcx7PKklS7cze5Pz87YsXx/e2yKEhgj4MWRZ+8u4IEemxrVOekqWgoqxRUg1qJlxXSjXJUa1GeSmiJlF4Gd8m4EEULjzxrUWwjZAICd4i2F6TCCQhSJ8wCzQ5sKeEn24k8bywZw15a3iLMyf8g+tXsjdLjcLPOr3yyd23LITD9LHdIA9JvvrroJcsPzfmhU3PPcP90ke60amLQ9XzQH4Johffvple/cD7vzPjW9XJb3TyUfoXB/9n3/9NLPCXDXknOvk/PTgPx79sZKGcSpUTjhsVSglnXaFUeH5YIZ04uSJRKjtrCuXy0UfBfunSc+MOR6cTh/83RDr9K2H0AqKXGlEpX8lVcmW8mMhknVfkvJ48klS9fHK/RDK3AjTQSq7ah4JS2VQynz7t66Tq6f5u9dMG/JpVyi5WU5l82ZMooER9GV4TCNUXU4kEXoJlWEBgQiu5FF4GbokEHuJBS3Mw2lOuzCUPN6BEci6TL5ZK5QLCOzsjndGeRH5uxRmRKFSL6d7w34oSyeUkkCgk0kvVVCFZKRcy+ZVCdTmfzBRKmUymnFrKpNPJbCaTTZUzmWQqUViqJpfAt9DK4lw9nc7OLWdQOVktI/g3t5hK1sv1SrVQgjWFlcxSEuZYKnjKubl6wYNKyWQ5WS+Uqvnyqe74q1Q6VylhnyokV+tZOMbSCrymksuruUomtZirryzVc8lybjm5lFtJLmcrxVKqmM1VUgh7VT1brVaylUypns1mS+VitrKYyq9mKsv5cj6braeyy9l6sVLMpxPJYnU15SnkF/Opei4NEIulYR/5GytdKRbwa7lSz+Ty+eJKNpvJ1vOLGVhRXqxC+C2vZuHg06nFTLWSSlZW8kvlOt4HpYqpzPLcUqaSWVpMJpeX8qulJCDKpYrFEqxZqixlc+VSvbKSRqVcdmWxnihUFsuFeiWdKNeXU8M97l+gdG7RCcMry5VscSlfrFbgNVmvlD11QJTyJMrJxWw5W/eUAVGxkKqsLGWT2SUcVzLLqXS9nl5ZzOTnitlsslIF30tVV2F0Aq+pA+5EAuNMLM0t5uYWy4lMpVqCWQqpev63Y0UQYauFRCINrrVSTleLyVxupQxJrlwoVsvLqUQKPKRehmPFVrQKPFKp5UoV5ySUmVvxpEtAKpNfrqbKqcV6YclBVMwWqnP5VLm0Cojyq2lPqVLMgJvWIeCtrlTrKQhQ9fJvJ2CXssvVDLaMylIq7bjSUqoEx1wtlstzqUR1uZotlurLmSQgygGilaW5Sj2VcBBlYH8EWWwFYla5nF1MZpdX8rlyHbwsl80AoiJYUQ4i0Vwy4UkXl4FTJVnPJhfz+bnMbwcRKuVzuVwWjrCSL2WypVId3qzAmlSiXCyj8mqxmCysVIBhKlNPl7Op6mIRQgoUXiurOI8nMlAeZYq5ZLpcXIUQvQSulyuWU7CmXK0XoAwqFPKrZWdgvp6rl5P5VL6YLaZ+M4jwQaZL6QKCyjoNDtd7LaTTuLSBgjqRxovwbwFvhbImXV+uV5wsWEgX8AwFZ1QJZsBDEwXstnhsCS/DdL33kAHxVKU07Ibw9L+dpP+LlVhJLiVT/8UH+B+rVzL/ZpzElStXrly5cuXKlStXrly5cuXKlStXrly5cuXKlStXrly5cuXKlStXrly5cuXKlStXrly5cuXKlStXrly5cuXK1VvX/wH/Qj6dgYC28AAAAABJRU5ErkJggg=="width=110 height="110"></a><br>Flechazo </div>
+<h4>Ambience</h4>
+<div class="box-2"><a target="_main"href="https://www.tripadvisor.in/Restaurant_Review-g297586-d15780389-Reviews-Mazzo-Hyderabad_Hyderabad_District_Telangana.html"><img src="https://media-cdn.tripadvisor.com/media/photo-s/19/5c/5e/b6/outer-deck-are-for-mazzo.jpg"height="110" width="110"></a><br>Mazzo</div>
+<div class="box-2"><a target="_main" href="https://www.tripadvisor.in/Restaurant_Review-g297586-d3626406-Reviews-Mekong-Hyderabad_Hyderabad_District_Telangana.html"><img src="https://media-cdn.tripadvisor.com/media/photo-s/0f/5d/c3/f1/ambiance.jpg" height="110" width="110" ></a><br>Mekong</div>
+<div class="box-2"><a target="_main"href="https://www.tripadvisor.in/Restaurant_Review-g297586-d12209624-Reviews-The_Fisherman_s_Wharf-Hyderabad_Hyderabad_District_Telangana.html"><img src="https://media-cdn.tripadvisor.com/media/photo-s/15/ba/a5/c7/the-fisherman-s-wharf.jpg"height="110" width="110"></a><br>Fisherman wharf</div>
+
+<div class="c"></div>
+<h4>Unwind</h4>
+<div class="box-3"><a target="_main"href="https://www.tripadvisor.in/Hotel_Review-g297586-d7938626-Reviews-Sheraton_Hyderabad_Hotel-Hyderabad_Hyderabad_District_Telangana.html"><img src="https://dynamic-media-cdn.tripadvisor.com/media/photo-o/27/8e/58/44/arial-view.jpg?w=300&h=300&s=1" height="150" width="150"/></a><br>Sheraton</div>
+<div class="box-3"><a target="_main"href="https://www.tripadvisor.in/Hotel_Review-g297586-d18190176-Reviews-Le_Meridien_Hyderabad-Hyderabad_Hyderabad_District_Telangana.html"><img src="https://dynamic-media-cdn.tripadvisor.com/media/photo-o/25/3a/8b/ed/facade.jpg?w=300&h=300&s=1"height="150" width="150"/></a><br>Le Meridien</div>
+<div class="box-3"><a target="_main"href="https://www.tripadvisor.in/Hotel_Review-g297586-d1554015-Reviews-The_Westin_Hyderabad_Mindspace-Hyderabad_Hyderabad_District_Telangana.html"><img src="https://dynamic-media-cdn.tripadvisor.com/media/photo-o/26/60/b0/31/the-westin-hyderabad.jpg?w=300&h=300&s=1" height="150" width="150"></a><br>Westin</div>
+<div class="box-3"><a target="_main"href="https://www.tripadvisor.in/Hotel_Review-g297586-d1674886-Reviews-The_Park_Hyderabad-Hyderabad_Hyderabad_District_Telangana.html"><img src="https://dynamic-media-cdn.tripadvisor.com/media/photo-o/28/92/04/06/facade.jpg?w=300&h=300&s=1 "height=150 width="150"/></a><br>The park</div>
+</div>
+<h4>Ice Cream</h4>
+
+<div id="copyright">
+
+    <p>Copyright@ Feast Finder-all rights reserved
+    </p>
+   
+    </select>
+</div>
+</body>
+</html>
